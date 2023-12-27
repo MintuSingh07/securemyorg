@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import getPostMetadata from "../../components/getPostMetadata"
+import getPostMetadata from "../components/getPostMetadata"
 import Image from 'next/image';
-import demo from "../../public/demo.png"
+import demo from "../public/demo.png"
 import NavBar from '@/app/components/NavBar';
 
 const blog = () => {
@@ -15,7 +15,7 @@ const blog = () => {
                     <p className='font-normal mt-3 text-sm'>{post.subtitle}</p>
                     <div id="bottom" className='flex flex-row justify-between items-center '>
                         <p className='font-light mt-3 text-xs'>{post.date}</p>
-                        <Link href={`blog/posts/${post.slug}`}>
+                        <Link href={`blog/${post.slug}`}>
                             <p className='text-green-600  mt-3'>Read Me</p>
                         </Link>
                     </div>

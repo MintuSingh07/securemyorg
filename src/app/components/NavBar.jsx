@@ -11,10 +11,10 @@ const NavBar = () => {
                             <Link href="/" className='text-white pr-7'>
                                 Home
                             </Link>
-                            <Link href="/pages/price" className='text-white pr-7'>
+                            <Link href="/price" className='text-white pr-7'>
                                 Pricing
                             </Link>
-                            <Link href="/pages/blog" className='text-white'>
+                            <Link href="/blog" className='text-white'>
                                 Blogs
                             </Link>
                         </li>

@@ -2,11 +2,10 @@ import fs from 'fs';
 import Markdown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import getPostMetadata from '@/app/components/getPostMetadata';
-import Image from 'next/image';
 
 
 const getPostContent = (slug) => {
-    const folder = "src/app/posts/";
+    const folder = "src/app/markdowns/";
     const file = `${folder}${slug}.md`;
     const content = fs.readFileSync(file, "utf8");
     const matterResult = matter(content);
